@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pendaftaran Peserta</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f8fd;
+      width: 600px;
+      margin: 20px auto;
+      padding: 10px 15px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1a56b0;
+    }
+
+    form {
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      padding: 15px 10px;
+      margin-bottom: 12px;
+    }
+
+    form p {
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #1a56b0;
+      color: #ffffff;
+      border: none;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: #ffffff;
+    }
+
+    th {
+      background-color: #1a56b0;
+      color: #ffffff;
+      padding: 8px;
+    }
+
+    td {
+      padding: 8px;
+      border: 1px solid #cccccc;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #e8eef9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Pendaftaran Peserta</h1>
+
+  <form>
+    <p>
+      Nama:
+      <input type="text" name="nama" 
+    </p>
+    <p>
+      Jenis Kelamin:
+      <input type="radio" name="jk" value="L" checked> L
+      <input type="radio" name="jk" value="P"> P
+    </p>
+    <p>
+      Jurusan:
+      <select name="jurusan">
+        <option value="Informatika" selected>Informatika</option>
+        <option value="Sistem Informasi">Sistem Informasi</option>
+      </select>
+    </p>
+    <button type="submit">Kirim</button>
+  </form>
+
+  <table>
+    <tr>
+      <th>No</th>
+      <th>Nama</th>
+      <th>Jurusan</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Muhammad zaidan prasetyo</td>
+      <td>Informatika</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Khoirun Nisa ' Afifah</td>
+      <td>Sistem Informasi</td>
+    </tr>
+  </table>
+
+</body>
+</html>

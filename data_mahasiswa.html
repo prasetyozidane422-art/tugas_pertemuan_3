@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Mahasiswa</title>
+  <style>
+    /* WARNA + JENIS HURUF: berlaku untuk seluruh halaman */
+    body {
+      font-family: Arial, sans-serif;   
+      background-color: #eef3fa;       
+      color: #333333;                  
+    }
+
+    h1 {
+      color: blue;                      
+      text-align: center;
+    }
+
+    .kotak {
+      background-color: white;
+      border: 1px solid gray;           
+      padding: 10px;                    
+    }
+
+    /* CLASS: dipakai di HTML dengan class="judul" */
+    .judul {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: white;
+    }
+
+    th, td {
+      border: 1px solid gray;           
+      padding: 8px;                     
+    }
+
+    th {
+      background-color: blue;          
+      color: white;
+    }
+  </style>
+</head>
+
+  <h1>Data Mahasiswa</h1>
+
+  <!-- Form berisi 6 elemen berbeda -->
+  <div class="kotak">
+    <form>
+      Nama: <input type="text"><br><br>
+      Email: <input type="email"><br><br>
+
+      Jenis Kelamin:
+      <input type="radio" name="jk"> L
+      <input type="radio" name="jk"> P <br><br>
+
+      <strong>Minat:</strong>
+      <input type="checkbox"> Komputer
+      <input type="checkbox"> kesehatan <br><br>
+
+      Prodi:
+      <select>
+        <option>Teknologi Informasi</option>
+        <option>Kedokteran</option>
+      </select><br><br>
+
+      Catatan:<br>
+      <textarea rows="3" cols="30"></textarea><br><br>
+
+      <button>Kirim</button>
+    </form>
+  </div>
+
+  <br>
+
+  <!-- Tabel 5 mahasiswa -->
+  <table>
+    <!-- Judul tabel: colspan="4" = gabung 4 kolom -->
+    <tr>
+      <td class="judul" colspan="4">Daftar Mahasiswa</td>
+    </tr>
+    <tr>
+      <th>NIM</th>
+      <th>Nama</th>
+      <th>Prodi</th>
+      <th>IPK</th>
+    </tr>
+    <tr>
+      <td>2520107</td>
+      <td>Muhammad Zaidan Prasetyo</td>
+      <td>Teknologi Informasi</td>
+      <td>4.00</td>
+    </tr>
+    <tr>
+      <td>2520108</td>
+      <td>Khoirun Nisa ' Afifah</td>
+      <td>Kedokteran</td>
+      <td>4.00</td>
+    </tr>
+    <tr>
+      <td>2520109</td>
+      <td>Jokowi</td>
+      <td>Teknologi Informasi</td>
+      <td>3.40</td>
+    </tr>
+    <tr>
+      <td>2520110</td>
+      <td>Gibran fufufafa</td>
+      <td>Teknologi Informasi</td>
+      <td>3.55</td>
+    </tr>
+    <tr>
+      <td>2520111</td>
+      <td>Alfa risqi</td>
+      <td>Kedokteran</td>
+      <td>3.80</td>
+    </tr>
+
+    <!-- colspan="3" = gabung 3 kolom -->
+    <tr>
+      <td class="judul" colspan="3">Rata-rata IPK</td>
+      <td class="judul">3.75</td>
+    </tr>
+  </table>
+
+</body>
+</html>
